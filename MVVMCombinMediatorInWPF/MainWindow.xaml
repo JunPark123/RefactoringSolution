@@ -1,0 +1,26 @@
+﻿<Window x:Class="MVVMCombinMediatorInWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:MVVMCombinMediatorInWPF"
+        xmlns:local="clr-namespace:MVVMCombinMediatorInWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!-- FirstViewModel UI -->
+            <TextBlock Text="FirstViewModel" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Vm1.Number}" FontSize="16" HorizontalAlignment="Center"/>
+            <Button Content="Increment" Command="{Binding Vm1.IncrementCommand}"/>
+
+            <!-- SecondViewModel UI -->
+            <TextBlock Text="SecondViewModel" FontWeight="Bold" Margin="0,15,0,0"/>
+            <TextBlock Text="{Binding Vm2.Number}" FontSize="16" HorizontalAlignment="Center"/>
+            <Button Content="Decrement" Command="{Binding Vm2.DecrementCommand}"/>
+        </StackPanel>
+    </Grid>
+</Window>
