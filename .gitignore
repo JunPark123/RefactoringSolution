@@ -1,0 +1,11 @@
+﻿################################################################################
+# 이 .gitignore 파일은 Microsoft(R) Visual Studio에서 자동으로 만들어졌습니다.
+################################################################################
+
+/mvpPatternCombinObserverInWinform/bin/Debug/net8.0-windows
+/mvpPatternCombinObserverInWinform/obj
+/MVVMCombinMediatorInWPF/bin/Debug/net8.0-windows
+/MVVMCombinMediatorInWPF/obj
+/RefactoringSolution/.vs/RefactoringSolution
+/RefactoringSolution/bin/Debug/net8.0
+/RefactoringSolution/obj
